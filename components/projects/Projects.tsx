@@ -31,7 +31,7 @@ export const Projects = () => {
             skills={['Vue JS', 'ChartJS', 'Express', 'API REST', 'JWT']}
             title='Agenda UNAD'
             subtitle='Seguimiento de cursos'
-            url='/'
+            url='https://agenda-unad.web.app'
             imagePosition='right'
           />
         </div>
