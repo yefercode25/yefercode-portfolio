@@ -39,13 +39,13 @@ export const Hero = () => {
           </div>
         </div>
       </main>
-      <Image
+      {/* <Image
         src='/img/sep-gray-leftsvg.svg'
         alt='Separador de secciones'
         width={1280}
         height={24}
         className={styles['hero__separator']}
-      />
+      /> */}
     </>
   )
 }

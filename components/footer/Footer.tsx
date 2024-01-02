@@ -1,7 +1,6 @@
-import Link from 'next/link'
-import styles from './Footer.module.css'
-import Image from 'next/image'
-import { FaHeart } from 'react-icons/fa6';
+import Link from 'next/link';
+import styles from './Footer.module.css';
+import Image from 'next/image';
 
 const year = new Date().getFullYear();
 
@@ -14,7 +13,7 @@ export const Footer = () => {
         </Link>
         <div className={styles.footer__text}>
           <p>
-            © {year} Yefercode. Desarrollado por Camilo Zaque con <FaHeart />
+            © {year} Yefercode. Desarrollado por Camilo Zaque con ❤️
           </p>
         </div>
       </div>

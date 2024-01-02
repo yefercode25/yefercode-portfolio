@@ -40,7 +40,7 @@ export const Project = ({ description, image, skills, title, url, subtitle, imag
           ))}
         </div>
         <div className={styles.project__info__button}>
-          <Link href={url}>
+          <Link href={url} target='_blank'>
             Ver más información
             <FaAnglesRight />
           </Link>
