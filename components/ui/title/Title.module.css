@@ -1,0 +1,20 @@
+.title {
+  font-size: 30px;
+  font-weight: var(--fw-extrabold);
+  color: var(--c-blue-400);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.title span {
+  background-color: var(--c-purple);
+  font-size: 10px;
+  font-weight: var(--fw-bold);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--c-light-primary);
+}

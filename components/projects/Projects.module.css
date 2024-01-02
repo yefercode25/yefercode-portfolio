@@ -1,0 +1,16 @@
+.projects {
+  padding: 0 20px;
+  background-color: var(--c-light-secondary);
+}
+
+.projects__container {
+  max-width: var(--mxw);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}

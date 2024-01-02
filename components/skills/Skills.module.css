@@ -1,0 +1,10 @@
+.skills {
+  background-color: var(--c-light-secondary);
+  padding: 60px 20px;
+  margin-top: -9px;
+}
+
+.skills__container {
+  max-width: var(--mxw);
+  margin: 0 auto;
+}

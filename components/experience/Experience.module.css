@@ -1,0 +1,26 @@
+.experience {
+  padding: 0 20px;
+}
+
+.experience__container {
+  max-width: var(--mxw);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.experience__container__button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.experience__container__button a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: underline;
+}
+
+.experience__container__button a svg {
+  font-size: 10px;
+}

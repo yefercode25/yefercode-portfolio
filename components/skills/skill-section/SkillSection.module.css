@@ -1,0 +1,41 @@
+.skill-section {
+  margin-bottom: 40px;
+}
+
+.skill-section h3 {
+  font-size: 25px;
+  font-weight: var(--fw-extrabold);
+  color: var(--c-blue-100);
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-list--habilites {
+  margin-bottom: 20px;  
+}
+
+.skills-list--tools .skill-item {
+  background-color: var(--c-purple);
+}
+
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background-color: var(--c-blue-200);
+  color: var(--c-light-primary);
+  border-radius: var(--br);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item:hover {
+  transform: scale(1.04) translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,35 @@
+.networks-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .networks-links {
+    justify-content: flex-start;
+  }
+}
+
+.networks-links__item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px;
+  color: var(--c-blue-400);
+  transition: all 0.3s ease;
+}
+
+.networks-links__item:hover {
+  color: var(--c-blue-200);
+}
+
+.networks-links__item span {
+  font-size: 16px;
+  font-weight: var(--fw-medium);
+}
+
+.networks-links__item svg:last-child {
+  font-size: 10px;
+}
