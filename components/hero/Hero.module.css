@@ -21,6 +21,10 @@
 
 .hero__container--info {
   text-align: center;
+
+  animation-name: fadeInLeft;
+  animation-duration: .5s;
+  animation-fill-mode: both;
 }
 
 .hero__container--info--name {
@@ -99,9 +103,36 @@
   }
 }
 
-.hero__separator {
-  width: 100vw;
-  object-fit: cover;
-  rotate: 180deg;
-  transform: scaleX(-1);
+.hero__container--image {
+  animation-name: fadeInRight;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }

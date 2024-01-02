@@ -1,5 +1,27 @@
 .skill-section {
   margin-bottom: 40px;
+
+  /* Animación de entrada experimental */
+  view-timeline-name: --skill;
+  view-timeline-axis: block;
+  animation-timeline: --skill;
+  animation-name: fadeInUp;
+  animation-range: entry 10% cover 20%;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .skill-section h3 {
