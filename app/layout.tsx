@@ -13,19 +13,20 @@ export const metadata: Metadata = {
   authors: {
     name: "Yeferson Camilo Zaque",
   },
+  robots: 'index, follow',
   category: 'Portfolio',
   keywords: ['Portfolio', 'Portafolio', 'Yefercode', 'Yeferson Camilo Zaque', 'Yeferson Zaque', 'Yeferson Camilo', 'Yeferson', 'Zaque', 'Yefercode Portfolio', 'Yefercode Portafolio', 'Yefercode Yeferson Camilo Zaque', 'Yefercode Yeferson Zaque', 'Yefercode Yeferson Camilo', 'Yefercode Yeferson', 'Yefercode Zaque'],
   openGraph: {
     locale: 'es_CO',
     type: 'website',
-    url: 'https://yefercode.up.railway.app/',
+    url: 'https://yefercode.dev/',
     title: 'Yefercode | Portafolio',
     description: 'Conoce mis habilidades, experiencia y proyectos realizados en el mundo del desarrollo web.',
     images: [
       {
-        url: 'https://yefercode.up.railway.app/img/og-image.png',
-        width: 1280,
-        height: 524,
+        url: 'https://yefercode.dev/img/og-image.png',
+        width: 995,
+        height: 900,
         alt: 'Yefercode | Portafolio',
         type: 'image/png',
       },
@@ -40,8 +41,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://yefercode.up.railway.app/img/og-image.png',
-        width: 1280,
-        height: 524,
+        width: 995,
+        height: 900,
         alt: 'Yefercode | Portafolio',
         type: 'image/png',
       },
