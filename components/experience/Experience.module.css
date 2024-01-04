@@ -19,6 +19,8 @@
   justify-content: center;
   gap: 5px;
   text-decoration: underline;
+  color: var(--text-color-one);
+  transition: var(--transition);
 }
 
 .experience__container__button a svg {

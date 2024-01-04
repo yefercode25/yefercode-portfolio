@@ -27,8 +27,9 @@
 .skill-section h3 {
   font-size: 25px;
   font-weight: var(--fw-extrabold);
-  color: var(--c-blue-100);
+  color: var(--c-subtitle-section);
   margin-bottom: 15px;
+  transition: var(--transition);
 }
 
 .skills-list {

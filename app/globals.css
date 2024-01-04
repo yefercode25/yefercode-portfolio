@@ -1,6 +1,8 @@
 :root {
+  /* Colors Of All Page */
   --c-light-primary: #FFFFFF;
   --c-light-secondary: #F0F0F0;
+  --c-gray: #DCDAD5;
   --c-blue-100: #4977FF;
   --c-blue-200: #3555B5;
   --c-blue-300: #19264B;
@@ -10,22 +12,51 @@
   --c-yellow-100: #FFDE7B;
   --c-yellow-200: #FFC107;
 
-  --bg-light-primary: var(--c-light-primary);
-  --bg-light-secondary: var(--c-light-secondary);
-  --bg-dark-primary: var(--c-blue-300);
-  --bg-dark-secondary: var(--c-blue-400);
+  /* Theme Elements */
+  --bg-primary: var(--c-light-primary);
+  --bg-secondary: var(--c-light-secondary);
+  --image-filter: invert(0) brightness(0);
+  --text-color-one: var(--c-blue-400);
+  --text-color-one-invert: var(--c-light-primary);
+  --text-color-one-hover: var(--c-blue-200);
+  --text-color-two: var(--c-blue-300);
+  --title-color-one: var(--c-blue-400);
+  --title-color-two: var(--c-purple);
+  --bg-title: var(--c-purple);
+  --c-title-section: var(--c-blue-400);
+  --c-subtitle-section: var(--c-blue-100);
+  --c-line: var(--c-purple);
 
+  /* Constraints */
   --mxw: 1100px;
   --br: 20px;
+  --transition: all .3s ease;
 
+  /* Font Weights */
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
   --fw-extrabold: 800;
+}
 
-  --w-tablet: 768px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: var(--c-blue-300);
+    --bg-secondary: var(--c-blue-400);
+    --image-filter: invert(1) brightness(100);
+    --text-color-one: var(--c-light-primary);
+    --text-color-one-invert: var(--c-blue-400);
+    --text-color-two: var(--c-gray);
+    --title-color-one: var(--c-blue-100);
+    --text-color-one-hover: var(--c-yellow-100);
+    --title-color-two: var(--c-yellow-100);
+    --bg-title: var(--c-light-primary);
+    --c-title-section: var(--c-blue-100);
+    --c-subtitle-section: var(--c-yellow-200);
+    --c-line: var(--c-yellow-200);
+  }
 }
 
 * {
@@ -41,9 +72,42 @@ body {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--bg-light-primary);
+  background-color: var(--bg-primary);
+  transition: background-color .3s ease;
 }
 
 img {
   max-width: 100%;
+}
+
+.light-theme {
+  --bg-primary: var(--c-light-primary);
+  --bg-secondary: var(--c-light-secondary);
+  --image-filter: invert(0) brightness(0);
+  --text-color-one: var(--c-blue-400);
+  --text-color-one-invert: var(--c-light-primary);
+  --text-color-one-hover: var(--c-blue-200);
+  --text-color-two: var(--c-blue-300);
+  --title-color-one: var(--c-blue-400);
+  --title-color-two: var(--c-purple);
+  --bg-title: var(--c-purple);
+  --c-title-section: var(--c-blue-400);
+  --c-subtitle-section: var(--c-blue-100);
+  --c-line: var(--c-purple);
+}
+
+.dark-theme {
+  --bg-primary: var(--c-blue-300);
+  --bg-secondary: var(--c-blue-400);
+  --image-filter: invert(1) brightness(100);
+  --text-color-one: var(--c-light-primary);
+  --text-color-one-invert: var(--c-blue-400);
+  --text-color-two: var(--c-gray);
+  --title-color-one: var(--c-blue-100);
+  --text-color-one-hover: var(--c-yellow-100);
+  --title-color-two: var(--c-yellow-100);
+  --bg-title: var(--c-light-primary);
+  --c-title-section: var(--c-blue-100);
+  --c-subtitle-section: var(--c-yellow-200);
+  --c-line: var(--c-yellow-200);
 }

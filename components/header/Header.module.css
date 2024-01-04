@@ -11,6 +11,11 @@
   padding: 20px 0;
 }
 
+.header > div img {
+  filter: var(--image-filter);
+  transition: var(--transition);
+}
+
 .switch-mode {
   display: flex;
   align-items: center;
@@ -20,5 +25,6 @@
 .switch-mode__icon {
   font-size: 33px;
   display: flex;
-  color: var(--c-dark);
+  color: var(--text-color-one);
+  transition: var(--transition);
 }

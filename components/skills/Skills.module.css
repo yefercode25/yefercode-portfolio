@@ -1,8 +1,9 @@
 .skills {
-  background-color: var(--c-light-secondary);
+  background-color: var(--bg-secondary);
   padding: 60px 20px;
   margin-top: -9px;
   clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 calc(100% - 20px));
+  transition: var(--transition);
 }
 
 .skills__container {

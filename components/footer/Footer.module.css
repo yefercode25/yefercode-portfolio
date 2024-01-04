@@ -1,6 +1,6 @@
 .footer {
   padding: 0 20px;
-  background-color: var(--c-light-primary);
+  background-color: var(--bg-primary);
 }
 
 .footer__container {
@@ -12,9 +12,16 @@
   gap: 20px;
 }
 
+.footer__container img {
+  filter: var(--image-filter);
+  transition: var(--transition);
+}
+
 .footer__text p {
   display: flex;
   align-items: center;
   gap: 5px;
   font-weight: var(--fw-medium);
+  color: var(--text-color-one);
+  transition: var(--transition);
 }

@@ -16,7 +16,7 @@ interface ProjectProps {
 export const Project = ({ description, image, skills, title, url, subtitle, imagePosition }: ProjectProps) => {
   return (
     <div 
-      className={`${styles.project} ${imagePosition === 'right' && styles['row-reverse-direction']}`} 
+      className={`${styles.project} ${imagePosition === 'right' ? styles.project__right : ''}`} 
     >
       <Image
         src={image}
@@ -25,7 +25,7 @@ export const Project = ({ description, image, skills, title, url, subtitle, imag
         height={250}
       />
       <div 
-        className={`${styles.project__info} ${imagePosition === 'right' && styles['text-right']}`}
+        className={`${styles.project__info}`}
       >
         <h3>
           { title }

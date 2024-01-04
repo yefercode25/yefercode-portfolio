@@ -53,3 +53,7 @@ input:checked + .slider:before {
   transform: translateX(27px);
   background-color: var(--c-blue-300);
 }
+
+.dark-theme {
+  --c-primary: #1d1d1d;
+}
