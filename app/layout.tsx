@@ -15,6 +15,38 @@ export const metadata: Metadata = {
   },
   category: 'Portfolio',
   keywords: ['Portfolio', 'Portafolio', 'Yefercode', 'Yeferson Camilo Zaque', 'Yeferson Zaque', 'Yeferson Camilo', 'Yeferson', 'Zaque', 'Yefercode Portfolio', 'Yefercode Portafolio', 'Yefercode Yeferson Camilo Zaque', 'Yefercode Yeferson Zaque', 'Yefercode Yeferson Camilo', 'Yefercode Yeferson', 'Yefercode Zaque'],
+  openGraph: {
+    locale: 'es_CO',
+    type: 'website',
+    url: 'https://yefercode.up.railway.app/',
+    title: 'Yefercode | Portafolio',
+    description: 'Conoce mis habilidades, experiencia y proyectos realizados en el mundo del desarrollo web.',
+    images: [
+      {
+        url: 'https://yefercode.up.railway.app/img/og-image.png',
+        width: 1280,
+        height: 524,
+        alt: 'Yefercode | Portafolio',
+        type: 'image/png',
+      },
+    ],
+  },
+  twitter: {
+    title: 'Yefercode | Portafolio',
+    card: 'summary_large_image',
+    creator: '@camilozaque',
+    site: '@yefercode',
+    description: 'Conoce mis habilidades, experiencia y proyectos realizados en el mundo del desarrollo web.',
+    images: [
+      {
+        url: 'https://yefercode.up.railway.app/img/og-image.png',
+        width: 1280,
+        height: 524,
+        alt: 'Yefercode | Portafolio',
+        type: 'image/png',
+      },
+    ]
+  }
 }
 
 export default function RootLayout({
