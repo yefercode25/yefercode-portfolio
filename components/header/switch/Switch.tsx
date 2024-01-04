@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import styles from './Switch.module.css';
 
 export const Switch = () => {
-  const [isDarkMode, setIsDarkMode] = useState<Boolean>(false);
+  const [isDarkMode, setIsDarkMode] = useState<Boolean | undefined>();
   
   useEffect(() => {
     const isDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -21,7 +21,21 @@ export const Switch = () => {
   }, []);
 
   useEffect(() => {
-    console.log(isDarkMode);
+    const setTheme = () => {
+      const bodyElement = document.querySelector('body');
+      
+      if (isDarkMode) {
+        bodyElement?.classList.add('dark-theme');
+        bodyElement?.classList.remove('light-theme');
+      } else {
+        bodyElement?.classList.add('light-theme');
+        bodyElement?.classList.remove('dark-theme');
+      }
+    };
+
+    if (isDarkMode !== undefined) {
+      setTheme();
+    }
   }, [isDarkMode]);
 
   return (
